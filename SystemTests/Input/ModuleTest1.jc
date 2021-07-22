@@ -1,0 +1,6 @@
+﻿module ModuleName {
+	int var
+	int some_function() {return var}
+}
+int outer_var = ModuleName.var
+outer_var = ModuleName.some_function()

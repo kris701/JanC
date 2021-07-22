@@ -1,0 +1,7 @@
+﻿module ModuleName {
+	struct Point {
+		int x
+		int y
+	}
+}
+ModuleName.Point point = ModuleName.Point{}

@@ -1,0 +1,4 @@
+﻿every 100 {
+	int a = 5
+	str b = "abc"
+}

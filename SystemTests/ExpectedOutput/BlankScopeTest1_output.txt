@@ -1,0 +1,7 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+void setup() {
+};
+void loop() {
+};

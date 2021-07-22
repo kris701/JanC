@@ -1,0 +1,29 @@
+﻿every 100 {
+
+}
+void func(){
+
+}
+
+module mod {
+	int value = 5
+	every 100 {
+
+	}
+	every 100 {
+
+	}
+	on (value == 5) {
+
+	}
+
+	module mod2 {
+		every 50 {
+
+		}
+	}
+
+	void func2(){
+
+	}
+}

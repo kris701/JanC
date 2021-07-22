@@ -1,0 +1,23 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+void JanC_func();
+void JanC_func() {
+	const int JanC_pina=1;
+	const int JanC_pinb=2;
+	const int JanC_pinc=3;
+	const int JanC_pind=4;
+	digitalWrite(JanC_pina, 0);
+	int JanC_a=digitalRead(JanC_pinb);
+	analogWrite(JanC_pinc, 5);
+	int JanC_b=analogRead(JanC_pind);
+	vTaskDelay(1000);
+};
+void setup() {
+	pinMode(1,OUTPUT);
+	pinMode(2,INPUT);
+	pinMode(3,OUTPUT);
+	pinMode(4,INPUT);
+};
+void loop() {
+};

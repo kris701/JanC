@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SemanticWarnings\**" />
+    <EmbeddedResource Remove="SemanticWarnings\**" />
+    <None Remove="SemanticWarnings\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
+    <ProjectReference Include="..\Grammar\Grammar.csproj" />
+    <ProjectReference Include="..\Nodes\Nodes.csproj" />
+    <ProjectReference Include="..\Tables\Tables.csproj" />
+    <ProjectReference Include="..\Tools\Tools.csproj" />
+  </ItemGroup>
+
+</Project>

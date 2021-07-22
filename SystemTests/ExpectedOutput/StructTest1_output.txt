@@ -1,0 +1,12 @@
+﻿#include <Arduino_FreeRTOS.h>
+struct JanC_Point;
+void loop();
+void setup();
+struct JanC_Point {
+	int JanC_x;
+	int JanC_y;
+};
+void setup() {
+};
+void loop() {
+};

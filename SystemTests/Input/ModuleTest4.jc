@@ -1,0 +1,7 @@
+﻿module ModuleA {
+	int var = ModuleB.inner_var
+	module ModuleB {
+		int inner_var = var
+	}
+}
+int outer_var = ModuleA.ModuleB.inner_var

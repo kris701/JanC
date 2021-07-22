@@ -1,0 +1,11 @@
+﻿int func(int a,int b) { 
+	return a + b
+}
+
+float func2(float a,float b) { 
+	return a + b
+}
+
+str func3(str a,str b) { 
+	return a + b
+}

@@ -1,0 +1,17 @@
+﻿#include <Arduino_FreeRTOS.h>
+struct JanC_Point;
+void loop();
+void setup();
+struct JanC_Point {
+	int JanC_x;
+	int JanC_y;
+};
+struct JanC_Point JanC_my_point;
+void setup() {
+	struct JanC_Point _struct_1 = {9,.JanC_y=10};
+	JanC_my_point = _struct_1;
+	JanC_my_point.JanC_x;
+	JanC_my_point.JanC_x = 5;
+};
+void loop() {
+};

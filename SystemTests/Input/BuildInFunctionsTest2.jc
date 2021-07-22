@@ -1,0 +1,11 @@
+﻿void func(){
+	const int pina = 1
+	const int pinb = 2
+	const int pinc = 3
+	const int pind = 4
+	digitalWrite(pina,0)
+	int a = digitalRead(pinb)
+	analogWrite(pinc,5)
+	int b = analogRead(pind)
+	sleep(1000)
+}

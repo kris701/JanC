@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JanCCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "-print -c ../../../TestCode/TurnLEDOnFromButton.jc"
+    }
+  }
+}

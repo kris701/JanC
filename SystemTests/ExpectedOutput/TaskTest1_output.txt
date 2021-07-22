@@ -1,0 +1,34 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+void EveryTask0(void *pvParameters) {
+	static unsigned long EveryTask0_previousMillis = 0;
+	while (1) {
+		unsigned long EveryTask0_currentMillis = millis();
+		if (EveryTask0_currentMillis - EveryTask0_previousMillis > 100) {
+			EveryTask0_previousMillis = EveryTask0_currentMillis;
+		};
+		vTaskDelay(50/portTICK_PERIOD_MS);
+	};
+};
+void OnceTask1(void *pvParameters) {
+};
+void IdleTask2(void *pvParameters) {
+	while (1) {
+		vTaskDelay(100/portTICK_PERIOD_MS);
+	};
+};
+void OnTask3(void *pvParameters) {
+	while (1) {
+		while (!(1 == 1)) vTaskDelay(100/portTICK_PERIOD_MS);
+		while ((1 == 1)) vTaskDelay(100/portTICK_PERIOD_MS);
+	};
+};
+void setup() {
+	xTaskCreate(EveryTask0, "Task", 100, NULL, 0, NULL);
+	xTaskCreate(OnceTask1, "Task", 100, NULL, 0, NULL);
+	xTaskCreate(IdleTask2, "Task", 100, NULL, 0, NULL);
+	xTaskCreate(OnTask3, "Task", 100, NULL, 0, NULL);
+};
+void loop() {
+};

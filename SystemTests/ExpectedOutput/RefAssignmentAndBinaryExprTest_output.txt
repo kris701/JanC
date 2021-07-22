@@ -1,0 +1,21 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+int* JanC_func();
+int* JanC_func() {
+	int JanC_a=7;
+	int* JanC_a1=(&JanC_a);
+	int* JanC_a2=JanC_a1;
+	int** JanC_a3=(&JanC_a1);
+	int JanC_b=13;
+	int* JanC_b1=(&JanC_b);
+	(*JanC_a2) = 6;
+	(**JanC_a3) = 3;
+	(**JanC_a3) = (**JanC_a3) * 3;
+	(*JanC_b1) = JanC_a;
+	JanC_b1 = JanC_a1;
+};
+void setup() {
+};
+void loop() {
+};

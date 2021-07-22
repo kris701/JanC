@@ -1,0 +1,15 @@
+﻿#include <Arduino_FreeRTOS.h>
+struct _ModuleName_Point;
+void loop();
+void setup();
+struct _ModuleName_Point {
+	int x;
+	int y;
+};
+struct _ModuleName_Point point;
+void setup() {
+	struct _ModuleName_Point _struct_1 = {};
+	point = _struct_1;
+};
+void loop() {
+};

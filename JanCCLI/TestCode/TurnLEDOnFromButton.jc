@@ -1,0 +1,7 @@
+﻿on (digitalRead(1) == 1) {
+	digitalWrite(2,1)
+}
+
+on (digitalRead(1) == 0) {
+	digitalWrite(2,0)
+}

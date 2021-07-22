@@ -1,0 +1,15 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+int JanC__ModuleName_some_function();
+int JanC__ModuleName_var;
+int JanC_outer_var;
+int JanC__ModuleName_some_function() {
+	return JanC__ModuleName_var;
+};
+void setup() {
+	JanC_outer_var = JanC__ModuleName_var;
+	JanC_outer_var = JanC__ModuleName_some_function();
+};
+void loop() {
+};

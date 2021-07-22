@@ -1,0 +1,99 @@
+﻿bool sensorStartState = false
+int value = 0
+
+void print(int num) {}
+
+on (value == 1) {
+	digitalWrite(4,1)
+}
+
+once {
+	digitalWrite(4,0)
+}
+
+idle {
+	digitalWrite(6,1)
+}
+
+every 100 {
+	int a = 1
+	a = -1
+	a = a + 1
+}
+
+every 50 {
+	int b
+	str c = "a"
+	c = "text"
+	sleep(200)
+	if ((1 * 2) == (2 == 3)) {
+		int a = 5
+		while (a < 10) {
+			a += 1
+		}
+		a = func(1,2)
+		for(int i = 0, i < 10, i += 1)
+		{
+			if (i == 2) {
+				digitalWrite(4, 1)
+			} else
+			{
+				analogWrite(2, 100)
+			}
+		}
+	}
+}
+
+module TemperatureSensor {
+	bool running = sensorStartState
+	int lastMeasurement
+	void start() {
+		running = true
+	}
+	void stop() {
+		TemperatureSensor.running = false
+	}
+	every 100 {
+		if (running) {
+			lastMeasurement = analogRead(5)
+		}
+	}
+}
+
+int func(int a,int b) { 
+	return a + b
+}
+module OtherModule {
+	int local
+
+	once {
+		TemperatureSensor.start()
+	}
+
+	idle {
+		print(TemperatureSensor.lastMeasurement)
+	}
+}
+struct Point {
+	int x
+	int y
+}
+void struct_func(Point a, Point b) {}
+struct_func(Point{1, 2}, Point{3, 4})
+struct_func(Point{5, 6}, Point{7, 8})
+Point my_point = Point{9, y=10}
+my_point.x
+my_point.x = 5
+
+const int id = 5
+digitalRead(id)
+
+void loop(){}
+
+every 100 {
+	critical {
+		int a = 5
+		a += 1
+		digitalWrite(1,5)
+	}
+}

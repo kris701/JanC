@@ -1,0 +1,21 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+void IdleTask0(void *pvParameters) {
+	while (1) {
+		taskENTER_CRITICAL();
+		{
+			int JanC_a=5;
+			JanC_a += 1;
+			digitalWrite(1, 5);
+		}
+		taskEXIT_CRITICAL();
+		vTaskDelay(100/portTICK_PERIOD_MS);
+	};
+};
+void setup() {
+	pinMode(1,OUTPUT);
+	xTaskCreate(IdleTask0, "Task", 100, NULL, 0, NULL);
+};
+void loop() {
+};

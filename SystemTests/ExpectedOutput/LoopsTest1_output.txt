@@ -1,0 +1,11 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+void setup() {
+	while (1) {
+		int JanC_a=5;
+	};
+	while (1) int JanC_a=5;
+};
+void loop() {
+};

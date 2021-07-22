@@ -1,0 +1,3 @@
+﻿module mod {
+	int value = 5
+}

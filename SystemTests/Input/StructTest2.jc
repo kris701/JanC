@@ -1,0 +1,7 @@
+﻿struct Point {
+	int x
+	int y
+}
+Point my_point = Point{9, y=10}
+my_point.x
+my_point.x = 5

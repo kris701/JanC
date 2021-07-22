@@ -1,0 +1,10 @@
+﻿
+every 100 {
+	digitalWrite(1,1)
+	digitalWrite(1,0)
+}
+
+every 500 {
+	digitalWrite(2,0)
+	digitalWrite(2,1)
+}

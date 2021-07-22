@@ -1,0 +1,17 @@
+﻿ref<int> func() {
+	int a = 7
+	ref<int> a1 = a
+	ref<int> a2 = a1
+	ref<ref<int>> a3 = a1
+
+	int b = 13
+	ref<int> b1 = b
+
+	a2 = 6
+	a3 = 3
+
+	a3 = a3 * 3
+
+	b1 = a
+	b1 = a1
+}

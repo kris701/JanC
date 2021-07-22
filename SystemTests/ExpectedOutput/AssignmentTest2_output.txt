@@ -1,0 +1,13 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+String JanC_a;
+String JanC_b;
+void setup() {
+	JanC_a = "abc";
+	JanC_a = "q";
+	JanC_b = JanC_a;
+	JanC_a = "abc";
+};
+void loop() {
+};

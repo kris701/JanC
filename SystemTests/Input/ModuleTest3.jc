@@ -1,0 +1,9 @@
+﻿module ModuleA {
+	int varA = ModuleB.varB
+}
+module ModuleB {
+	int varB = ModuleA.varA
+}
+module ModuleC {
+	int varC = ModuleC.varC
+}

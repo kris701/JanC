@@ -1,0 +1,21 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+int JanC_a;
+int JanC_b;
+void setup() {
+	JanC_a = 5;
+	switch(JanC_a) {
+		case 0: JanC_b = 2; break;
+		case 1: JanC_b = 10; break;
+	};
+	switch(JanC_b) {
+		case 0: JanC_b = 2; break;
+		case 1: JanC_b = 10; break;
+		default: {
+			JanC_b = 100;
+		}
+	};
+};
+void loop() {
+};

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ASTGenerator\ASTGenerator.csproj" />
+    <ProjectReference Include="..\CodeGenerator\CodeGenerator.csproj" />
+    <ProjectReference Include="..\ContextAnalyzer\ContextAnalyzer.csproj" />
+    <ProjectReference Include="..\CSTGenerator\CSTGenerator.csproj" />
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
+  </ItemGroup>
+
+</Project>

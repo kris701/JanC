@@ -1,0 +1,11 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+int JanC_a;
+void setup() {
+	JanC_a = 1;
+	JanC_a += 5;
+	JanC_a -= 10;
+};
+void loop() {
+};

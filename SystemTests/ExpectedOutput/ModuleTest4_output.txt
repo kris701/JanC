@@ -1,0 +1,13 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+int JanC_ModuleA_var;
+int JanC_ModuleA_ModuleB_inner_var;
+int JanC_outer_var;
+void setup() {
+	JanC_ModuleA_var = JanC_ModuleA_ModuleB_inner_var;
+	JanC_ModuleA_ModuleB_inner_var = JanC_ModuleA_var;
+	JanC_outer_var = JanC_ModuleA_ModuleB_inner_var;
+};
+void loop() {
+};

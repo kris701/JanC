@@ -1,0 +1,2 @@
+﻿const int pina = 5
+digitalWrite(pina, 1)

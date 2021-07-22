@@ -1,0 +1,7 @@
+﻿void func(){
+	digitalWrite(1,0)
+	int a = digitalRead(2)
+	analogWrite(3,5)
+	int b = analogRead(4)
+	sleep(1000)
+}

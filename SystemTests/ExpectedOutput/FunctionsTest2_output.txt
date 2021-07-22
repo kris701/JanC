@@ -1,0 +1,22 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+String JanC_func3(String JanC_a, String JanC_b);
+float JanC_func2(float JanC_a, float JanC_b);
+int JanC_func(int JanC_a, int JanC_b);
+int JanC_func(int JanC_a, int JanC_b) {
+	return JanC_a + JanC_b;
+};
+float JanC_func2(float JanC_a, float JanC_b) {
+	return JanC_a + JanC_b;
+};
+String JanC_func3(String JanC_a, String JanC_b) {
+	return JanC_a + JanC_b;
+};
+void setup() {
+	JanC_func(1, 2);
+	JanC_func2(1.1, 2.1);
+	JanC_func3("1", "2");
+};
+void loop() {
+};

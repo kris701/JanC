@@ -1,0 +1,10 @@
+﻿bool value = false
+
+every 1000 {
+	if (value)
+		digitalWrite(1,1)
+	else
+		digitalWrite(1,0)
+
+	value = !value
+}

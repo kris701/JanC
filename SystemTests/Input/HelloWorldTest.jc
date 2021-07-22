@@ -1,0 +1,3 @@
+﻿str hello = "Hello"
+str space = " "
+str world = "World!"

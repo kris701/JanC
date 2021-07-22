@@ -1,0 +1,6 @@
+﻿module mod {
+	int value = 5
+	module innermod {
+		int innervalue = 10
+	}
+}

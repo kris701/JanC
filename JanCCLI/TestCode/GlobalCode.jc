@@ -1,0 +1,3 @@
+﻿int value = 5
+if (value > 10)
+	value = 10

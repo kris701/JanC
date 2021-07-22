@@ -1,0 +1,17 @@
+﻿once {
+	int a = 5
+	int b = 10
+	int c = func(a,b)
+}
+
+int func(int a,int b) { 
+	ref<int> newb = b
+	b = newb + 5
+	func1(a, newb) 
+	func1(a, ref(a))
+	return newb + 1
+}
+
+void func1(int a, ref<int> b) { 
+	b = a + 1 
+}

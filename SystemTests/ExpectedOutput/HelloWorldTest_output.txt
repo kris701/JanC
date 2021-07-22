@@ -1,0 +1,13 @@
+#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+String JanC_hello;
+String JanC_space;
+String JanC_world;
+void setup() {
+	JanC_hello = "Hello";
+	JanC_space = " ";
+	JanC_world = "World!";
+};
+void loop() {
+};

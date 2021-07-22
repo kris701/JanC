@@ -1,0 +1,14 @@
+﻿int a = 5
+int b
+switch(a){
+	0 b = 2
+	1 b = 10
+}
+
+switch(b){
+	0 b = 2
+	1 b = 10
+}
+else {
+	b = 100
+}

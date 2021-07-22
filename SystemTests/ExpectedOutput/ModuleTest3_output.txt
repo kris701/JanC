@@ -1,0 +1,13 @@
+﻿#include <Arduino_FreeRTOS.h>
+void loop();
+void setup();
+int _ModuleA_varA;
+int _ModuleB_varB;
+int _ModuleC_varC;
+void setup() {
+	_ModuleA_varA = _ModuleB_varB;
+	_ModuleB_varB = _ModuleA_varA;
+	_ModuleC_varC = _ModuleC_varC;
+};
+void loop() {
+};
